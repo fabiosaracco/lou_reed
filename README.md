@@ -11,12 +11,12 @@ It should probably install automatically.
 
 fico can be installed via pip:
 '''
-pip install git+https://github.com/fabiosaracco/fico.git
+pip install git+https://github.com/fabiosaracco/lou_reed.git
 '''
 ## Contents (so far)
 
 * setup.py: the setup, easy as this.
-* fico.py: calculate fitness and complexity and reorder matrices
+* lou_reed/lou_reed.py: calculate fitness and complexity and reorder matrices
 
 ## Licence
 
