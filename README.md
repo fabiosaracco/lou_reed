@@ -1,15 +1,14 @@
 # README
 
-fico is a small module to calculate Fitness and Complexity according to the algorithm defined in 
-Tacchella et al, A New Metrics for Countries' Fitness and Products' Complexity
-Scientific Reports volume 2, Article number: 723 (2012).
+Louvain algorithm's is affected by a dependence on the order of the nodes. 
+The present module, built upon [igraph](https://python.igraph.org/en/stable/), preform the LOUvain algorithm in which the order of the nodes is REshufflED :) 
 
 ## Setup
 It should probably install automatically.
 
 ## Installation
 
-fico can be installed via pip:
+lou_reed can be installed via pip:
 ```
 pip install git+https://github.com/fabiosaracco/lou_reed.git
 ```
@@ -23,24 +22,7 @@ pip install git+https://github.com/fabiosaracco/lou_reed.git
 MIT
 
 # How it works
-fico module is pretty simple. First load all fucntions in the module:
-```
-from lou_reed import *
-```
-If m is the biadjacency matrix of a bipartite network (in the present version, it is a numpy array), then 
-```
-fico(m)
-```
-returns the fitnesses of the rows and the complexity of the columns. 
 
-
-If you want to reorder the biadjacency matrix m in term of fitness and complecity, then 
-```
-bam_fico_or(m)
-```
-returns the matrix m opportunely reordered. If you want to get the argsort used to reorder the matrix, just turn on the return_argsorts option:
-```
-bam_fico_or(m, return_argsorts=True)
-```
+TBD
 
 
