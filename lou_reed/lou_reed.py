@@ -6,9 +6,8 @@ from tqdm import trange, tqdm
 import igraph
 
 
-def lou_reed(g, n,reshuffles, verbose=True):
-    #edgelist=[e.tuple for e in g.es]
-    #nodelist=sorted(list(set([item for sublist in edgelist for item in sublist])))
+def lou_reed(g, reshuffles, verbose=True):
+    n=g.vcount()
     nodelist=list(range(n))
     Loug=g.community_multilevel(return_levels=False)
     edgelist=[g.es[i].tuple for i in range(len(g.es))]
