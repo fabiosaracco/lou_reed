@@ -12,7 +12,7 @@ pip install git+https://github.com/fabiosaracco/lou_reed.git
 ## Contents (so far)
 
 * setup.py: the setup, easy as this.
-* lou_reed/lou_reed.py: calculate fitness and complexity and reorder matrices
+* lou_reed/lou_reed.py: calculate Louvain after reshuffling the order of the nodes 
 
 ## Licence
 
